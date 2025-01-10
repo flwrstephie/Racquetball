@@ -5,9 +5,8 @@ public class BallPhysics : MonoBehaviour
 {
     private Rigidbody _rigidbody;
 
-    public float bounceMultiplier = 1.5f; // Control bounce strength
-    public float minVelocity = 5f;       // Minimum velocity for stability
-    public float maxVelocity = 20f;      // Clamp max velocity to prevent extreme bounces
+    public float fixedSpeed = 20f;        // Fixed speed for consistent movement
+    public float verticalAdjustment = 2f; // Slight vertical adjustment after wall bounce
 
     void Start()
     {
@@ -19,23 +18,31 @@ public class BallPhysics : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Reflect the velocity along the collision normal
-        Vector3 reflectedVelocity = Vector3.Reflect(_rigidbody.velocity, collision.contacts[0].normal);
-
-        // Stabilize direction by normalizing the velocity vector
-        if (reflectedVelocity.magnitude < minVelocity)
+        if (collision.gameObject.CompareTag("Racquet"))
         {
-            reflectedVelocity = reflectedVelocity.normalized * minVelocity;
+            // Reflect the ball's velocity, ensuring it stays consistent
+            Vector3 velocity = _rigidbody.velocity;
+
+            // Neutralize vertical movement and prioritize forward direction
+            velocity = new Vector3(velocity.x, 0f, Mathf.Abs(velocity.z));
+
+            // Normalize and apply fixed speed
+            _rigidbody.velocity = velocity.normalized * fixedSpeed;
+
+            Debug.Log($"Hit Racquet! Adjusted velocity: {_rigidbody.velocity}");
         }
+        else if (collision.gameObject.CompareTag("Wall"))
+        {
+            // Reflect the velocity for wall collision
+            Vector3 reflection = Vector3.Reflect(_rigidbody.velocity, collision.contacts[0].normal);
 
-        // Amplify the reflected velocity and clamp to max velocity
-        Vector3 finalVelocity = reflectedVelocity * bounceMultiplier;
-        finalVelocity = Vector3.ClampMagnitude(finalVelocity, maxVelocity);
+            // Add a slight vertical component to prevent sliding
+            reflection.y += verticalAdjustment;
 
-        // Apply the stabilized velocity
-        _rigidbody.velocity = finalVelocity;
+            // Normalize and apply fixed speed
+            _rigidbody.velocity = reflection.normalized * fixedSpeed;
 
-        // Optional: Log for debugging
-        Debug.Log($"Ball bounced! New velocity: {_rigidbody.velocity}, Collision normal: {collision.contacts[0].normal}");
+            Debug.Log($"Hit Wall! Adjusted velocity: {_rigidbody.velocity}");
+        }
     }
 }

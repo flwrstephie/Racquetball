@@ -87,17 +87,6 @@ public class PlayerController : MonoBehaviour
         isSwinging = false;
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ball"))
-        {
-            Rigidbody ballRigidbody = collision.gameObject.GetComponent<Rigidbody>();
-            if (ballRigidbody != null)
-            {
-                // Reflect the ball's velocity based on the racquet's swing
-                Vector3 reflection = Vector3.Reflect(ballRigidbody.velocity, collision.contacts[0].normal);
-                ballRigidbody.velocity = reflection * 1.2f; // Adjust bounce strength
-            }
-        }
-    }
+
+
 }
