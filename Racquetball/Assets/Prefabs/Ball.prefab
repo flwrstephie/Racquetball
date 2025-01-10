@@ -127,9 +127,9 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -146,3 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0424f775fa771ee49bb6b66aa1a2a3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bounceMultiplier: 1.5
+  minVelocity: 5
+  maxVelocity: 20

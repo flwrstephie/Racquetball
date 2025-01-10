@@ -1,14 +1,19 @@
 using UnityEngine;
+using System.Collections; // Needed for IEnumerator
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f; // Speed for left-right movement
     public Rigidbody ballPrefab; // Assign the ball prefab in the Inspector
     public Transform ballSpawnPoint; // Where the ball spawns
+    public Transform racquet; // Assign the racquet in the Inspector
+    public float swingSpeed = 500f; // Speed of racquet swing
 
     [Range(0, 90)]
     public float angle = 45f; // Launch angle
     public float power = 10f; // Launch power
+
+    private bool isSwinging = false;
 
     void Update()
     {
@@ -22,6 +27,12 @@ public class PlayerController : MonoBehaviour
         {
             ShootBall();
         }
+
+        // Swing the racquet when the left mouse button (LMB) is pressed
+        if (Input.GetMouseButtonDown(0) && !isSwinging)
+        {
+            StartCoroutine(SwingRacquet());
+        }
     }
 
     void ShootBall()
@@ -34,22 +45,59 @@ public class PlayerController : MonoBehaviour
     }
 
     void LaunchBall(Rigidbody ball)
-{
-    // Convert angle to radians
-    float angleInRadians = angle * Mathf.PI / 180;
+    {
+        float angleInRadians = angle * Mathf.PI / 180;
+        Vector3 localLaunchVelocity = new Vector3(
+            0,
+            Mathf.Sin(angleInRadians) * power,
+            Mathf.Cos(angleInRadians) * power
+        );
+        Vector3 worldLaunchVelocity = transform.TransformDirection(localLaunchVelocity);
+        ball.velocity = worldLaunchVelocity;
+    }
 
-    // Calculate velocity in local space (relative to the player)
-    Vector3 localLaunchVelocity = new Vector3(
-        0, // No horizontal movement relative to the player
-        Mathf.Sin(angleInRadians) * power, // Vertical component
-        Mathf.Cos(angleInRadians) * power  // Forward (Z-axis) component
-    );
+    private IEnumerator SwingRacquet()
+    {
+        isSwinging = true;
 
-    // Convert to world space using the player's rotation
-    Vector3 worldLaunchVelocity = transform.TransformDirection(localLaunchVelocity);
+        // Save the initial and target rotation
+        Quaternion startRotation = racquet.localRotation;
+        Quaternion targetRotation = Quaternion.Euler(0, 0, 45); // Adjust as needed
 
-    // Apply the velocity to the ball
-    ball.velocity = worldLaunchVelocity;
-}
+        float elapsedTime = 0f;
+        float swingDuration = 0.2f; // Adjust for swing speed
 
+        // Rotate the racquet to the target position
+        while (elapsedTime < swingDuration)
+        {
+            racquet.localRotation = Quaternion.Lerp(startRotation, targetRotation, elapsedTime / swingDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Return the racquet to the starting position
+        elapsedTime = 0f;
+        while (elapsedTime < swingDuration)
+        {
+            racquet.localRotation = Quaternion.Lerp(targetRotation, startRotation, elapsedTime / swingDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        isSwinging = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            Rigidbody ballRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+            if (ballRigidbody != null)
+            {
+                // Reflect the ball's velocity based on the racquet's swing
+                Vector3 reflection = Vector3.Reflect(ballRigidbody.velocity, collision.contacts[0].normal);
+                ballRigidbody.velocity = reflection * 1.2f; // Adjust bounce strength
+            }
+        }
+    }
 }
