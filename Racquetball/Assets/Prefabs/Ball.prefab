@@ -146,6 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0424f775fa771ee49bb6b66aa1a2a3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceMultiplier: 1.5
-  minVelocity: 5
-  maxVelocity: 50
+  fixedSpeed: 30
