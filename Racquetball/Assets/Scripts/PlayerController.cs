@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isSwinging = false;
     private bool isRegularSwing = false; // Tracks which swing is currently being used
+    private GameObject currentBall; // Track the current ball
 
     void Update()
     {
@@ -30,8 +31,8 @@ public class PlayerController : MonoBehaviour
         // Apply the movement to the player object
         transform.Translate(movement, Space.World);
 
-        // Shoot the ball when Space is pressed
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Shoot the ball when Space is pressed, but only if no ball exists
+        if (Input.GetKeyDown(KeyCode.Space) && currentBall == null)
         {
             ShootBall();
         }
@@ -53,9 +54,12 @@ public class PlayerController : MonoBehaviour
 
     void ShootBall()
     {
-        if (ballPrefab != null && ballSpawnPoint != null)
+        if (ballPrefab != null && ballSpawnPoint != null && currentBall == null)
         {
-            Rigidbody ballInstance = Instantiate(ballPrefab, ballSpawnPoint.position, Quaternion.identity);
+            // Only instantiate a new ball if there isn't one already
+            Rigidbody ballInstance = Instantiate(ballPrefab, ballSpawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
+            currentBall = ballInstance.gameObject; // Assign the current ball
+
             LaunchBall(ballInstance);
         }
     }
@@ -149,5 +153,11 @@ public class PlayerController : MonoBehaviour
                 Debug.Log($"Ball hit with {(isRegularSwing ? "Regular" : "Underhand")} swing! Velocity: {ballRigidbody.velocity}");
             }
         }
+    }
+
+    // Call this method when the player loses a life
+    public void LoseLife()
+    {
+        ScoreManager.Instance.LoseLife();
     }
 }
