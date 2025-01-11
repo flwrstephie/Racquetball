@@ -3,62 +3,69 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Speed for left-right movement
-    public Rigidbody ballPrefab; // Assign the ball prefab in the Inspector
-    public Transform ballSpawnPoint; // Where the ball spawns
-    public Transform racquet; // Assign the racquet in the Inspector
-    public float swingSpeed = 500f; // Speed of racquet swing
+    public float moveSpeed = 5f; 
+    public Rigidbody ballPrefab; 
+    public Transform ballSpawnPoint; 
+    public Transform racquet; 
+    public float swingSpeed = 500f; 
 
     [Range(0, 90)]
-    public float angle = 45f; // Launch angle
-    public float power = 10f; // Launch power
-    public float regularHitForce = 15f; // Force applied for LMB swing
-    public float underhandHitForce = 30f; // Force applied for RMB swing
+    public float angle = 45f; 
+    public float power = 10f; 
+    public float regularHitForce = 15f; 
+    public float underhandHitForce = 30f; 
 
     private bool isSwinging = false;
-    private bool isRegularSwing = false; // Tracks which swing is currently being used
-    private GameObject currentBall; // Track the current ball
+    private bool isRegularSwing = false; 
+    private GameObject currentBall; 
 
-    void Update()
+    public Rigidbody rb;
+
+void Start()
+{
+    rb = GetComponent<Rigidbody>();
+}
+
+void Update()
+{
+    float horizontalInput = Input.GetAxis("Horizontal");
+    float verticalInput = Input.GetAxis("Vertical");
+
+    Vector3 movement = new Vector3(horizontalInput, 0, verticalInput) * moveSpeed * Time.deltaTime;
+    MovePlayer(movement);
+
+    if (Input.GetKeyDown(KeyCode.Space) && currentBall == null)
     {
-        // Move left and right
-        float horizontalInput = Input.GetAxis("Horizontal"); // Left/Right movement (A/D keys or arrow keys)
-        float verticalInput = Input.GetAxis("Vertical");     // Forward/Backward movement (W/S keys or arrow keys)
-
-        // Combine horizontal and vertical input into a single movement vector
-        Vector3 movement = new Vector3(horizontalInput, 0, verticalInput) * moveSpeed * Time.deltaTime;
-
-        // Apply the movement to the player object
-        transform.Translate(movement, Space.World);
-
-        // Shoot the ball when Space is pressed, but only if no ball exists
-        if (Input.GetKeyDown(KeyCode.Space) && currentBall == null)
-        {
-            ShootBall();
-        }
-
-        // Regular swing with the left mouse button (LMB)
-        if (Input.GetMouseButtonDown(0) && !isSwinging)
-        {
-            isRegularSwing = true;
-            StartCoroutine(RegularSwing());
-        }
-
-        // Underhand swing with the right mouse button (RMB)
-        if (Input.GetMouseButtonDown(1) && !isSwinging)
-        {
-            isRegularSwing = false;
-            StartCoroutine(UnderhandSwing());
-        }
+        ShootBall();
     }
+
+    if (Input.GetMouseButtonDown(0) && !isSwinging)
+    {
+        isRegularSwing = true;
+        StartCoroutine(RegularSwing());
+    }
+
+    if (Input.GetMouseButtonDown(1) && !isSwinging)
+    {
+        isRegularSwing = false;
+        StartCoroutine(UnderhandSwing());
+    }
+}
+
+void MovePlayer(Vector3 movement)
+{
+    // Directly applying the movement force to the Rigidbody
+    rb.MovePosition(rb.position + movement);
+}
+
 
     void ShootBall()
     {
         if (ballPrefab != null && ballSpawnPoint != null && currentBall == null)
         {
-            // Only instantiate a new ball if there isn't one already
+            
             Rigidbody ballInstance = Instantiate(ballPrefab, ballSpawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-            currentBall = ballInstance.gameObject; // Assign the current ball
+            currentBall = ballInstance.gameObject; 
 
             LaunchBall(ballInstance);
         }
@@ -80,9 +87,8 @@ public class PlayerController : MonoBehaviour
     {
         isSwinging = true;
 
-        // Regular swing animation
         Quaternion startRotation = racquet.localRotation;
-        Quaternion targetRotation = Quaternion.Euler(0, 0, -30); // Adjust as needed
+        Quaternion targetRotation = Quaternion.Euler(0, 0, -30); 
 
         float elapsedTime = 0f;
         float swingDuration = 0.2f;
@@ -109,9 +115,9 @@ public class PlayerController : MonoBehaviour
     {
         isSwinging = true;
 
-        // Underhand swing animation
+        
         Quaternion startRotation = racquet.localRotation;
-        Quaternion targetRotation = Quaternion.Euler(45, 0, -45); // Adjust as needed
+        Quaternion targetRotation = Quaternion.Euler(45, 0, -45); 
 
         float elapsedTime = 0f;
         float swingDuration = 0.3f;
@@ -136,18 +142,18 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the racquet hits the ball
+        
         if (other.CompareTag("Ball") && isSwinging)
         {
             Rigidbody ballRigidbody = other.GetComponent<Rigidbody>();
 
             if (ballRigidbody != null)
             {
-                // Determine the force and direction based on the swing type
+                
                 float appliedForce = isRegularSwing ? regularHitForce : underhandHitForce;
-                Vector3 hitDirection = racquet.transform.forward.normalized; // Ball moves forward from racquet
+                Vector3 hitDirection = racquet.transform.forward.normalized; 
 
-                // Apply velocity to the ball
+                
                 ballRigidbody.velocity = hitDirection * appliedForce;
 
                 Debug.Log($"Ball hit with {(isRegularSwing ? "Regular" : "Underhand")} swing! Velocity: {ballRigidbody.velocity}");
@@ -155,7 +161,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Call this method when the player loses a life
+    
     public void LoseLife()
     {
         ScoreManager.Instance.LoseLife();
