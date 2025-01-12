@@ -39,11 +39,13 @@ public class ScoreManager : MonoBehaviour
         Lives--;
         if (Lives <= 0)
         {
+            PlayerPrefs.SetInt("FinalScore", Score);
             SceneManager.LoadScene("GameOverScene");
         }
         UpdateLivesUI();  
         UpdateUI();
     }
+
 
     private void UpdateUI()
     {

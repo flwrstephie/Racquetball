@@ -19,45 +19,38 @@ public class PlayerController : MonoBehaviour
     private bool isRegularSwing = false; 
     private GameObject currentBall; 
 
-    public Rigidbody rb;
-
-void Start()
-{
-    rb = GetComponent<Rigidbody>();
-}
-
-void Update()
-{
-    float horizontalInput = Input.GetAxis("Horizontal");
-    float verticalInput = Input.GetAxis("Vertical");
-
-    Vector3 movement = new Vector3(horizontalInput, 0, verticalInput) * moveSpeed * Time.deltaTime;
-    MovePlayer(movement);
-
-    if (Input.GetKeyDown(KeyCode.Space) && currentBall == null)
+    void Update()
     {
-        ShootBall();
+        
+        float horizontalInput = Input.GetAxis("Horizontal"); 
+        float verticalInput = Input.GetAxis("Vertical");     
+
+        
+        Vector3 movement = new Vector3(horizontalInput, 0, verticalInput) * moveSpeed * Time.deltaTime;
+
+        
+        transform.Translate(movement, Space.World);
+
+        
+        if (Input.GetKeyDown(KeyCode.Space) && currentBall == null)
+        {
+            ShootBall();
+        }
+
+        
+        if (Input.GetMouseButtonDown(0) && !isSwinging)
+        {
+            isRegularSwing = true;
+            StartCoroutine(RegularSwing());
+        }
+
+        
+        if (Input.GetMouseButtonDown(1) && !isSwinging)
+        {
+            isRegularSwing = false;
+            StartCoroutine(UnderhandSwing());
+        }
     }
-
-    if (Input.GetMouseButtonDown(0) && !isSwinging)
-    {
-        isRegularSwing = true;
-        StartCoroutine(RegularSwing());
-    }
-
-    if (Input.GetMouseButtonDown(1) && !isSwinging)
-    {
-        isRegularSwing = false;
-        StartCoroutine(UnderhandSwing());
-    }
-}
-
-void MovePlayer(Vector3 movement)
-{
-    // Directly applying the movement force to the Rigidbody
-    rb.MovePosition(rb.position + movement);
-}
-
 
     void ShootBall()
     {

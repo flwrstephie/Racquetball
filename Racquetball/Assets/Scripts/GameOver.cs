@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
@@ -7,21 +8,19 @@ public class GameOverMenu : MonoBehaviour
 
     private void Start()
     {
-        if (ScoreManager.Instance != null)
-        {
-            finalScoreText.text = "Final Score: " + ScoreManager.Instance.Score;
-        }
+        int finalScore = PlayerPrefs.GetInt("FinalScore", 0); // Get the score, default to 0 if not found
+        finalScoreText.text = "Final Score: " + finalScore;
     }
 
     public void RetryGame()
     {
-        ScoreManager.Instance.ResetScore();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        PlayerPrefs.DeleteKey("FinalScore"); // Optionally clear the saved score
+        SceneManager.LoadScene("GameScene");
     }
 
     public void MainMenu()
     {
-        ScoreManager.Instance.ResetScore();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        PlayerPrefs.DeleteKey("FinalScore"); // Optionally clear the saved score
+        SceneManager.LoadScene("MainMenu");
     }
 }
