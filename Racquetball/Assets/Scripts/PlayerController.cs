@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;  // If you're using TextMeshPro for tutorial text.
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,32 +20,32 @@ public class PlayerController : MonoBehaviour
     private bool isRegularSwing = false; 
     private GameObject currentBall; 
 
+    // Reference to the tutorial text (assign this in the Inspector)
+    public TextMeshProUGUI tutorialText;
+
     void Update()
     {
-        
         float horizontalInput = Input.GetAxis("Horizontal"); 
         float verticalInput = Input.GetAxis("Vertical");     
 
-        
+        // Player movement logic
         Vector3 movement = new Vector3(horizontalInput, 0, verticalInput) * moveSpeed * Time.deltaTime;
-
-        
         transform.Translate(movement, Space.World);
 
-        
+        // Shoot ball if player presses space and there's no current ball
         if (Input.GetKeyDown(KeyCode.Space) && currentBall == null)
         {
             ShootBall();
         }
 
-        
+        // Regular swing
         if (Input.GetMouseButtonDown(0) && !isSwinging)
         {
             isRegularSwing = true;
             StartCoroutine(RegularSwing());
         }
 
-        
+        // Underhand swing
         if (Input.GetMouseButtonDown(1) && !isSwinging)
         {
             isRegularSwing = false;
@@ -56,11 +57,18 @@ public class PlayerController : MonoBehaviour
     {
         if (ballPrefab != null && ballSpawnPoint != null && currentBall == null)
         {
-            
+            // Instantiate the ball and shoot it
             Rigidbody ballInstance = Instantiate(ballPrefab, ballSpawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
             currentBall = ballInstance.gameObject; 
 
+            // Launch the ball
             LaunchBall(ballInstance);
+
+            // Hide the tutorial text after the first shot
+            if (tutorialText != null)
+            {
+                tutorialText.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -108,7 +116,6 @@ public class PlayerController : MonoBehaviour
     {
         isSwinging = true;
 
-        
         Quaternion startRotation = racquet.localRotation;
         Quaternion targetRotation = Quaternion.Euler(45, 0, -45); 
 
@@ -135,25 +142,20 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
         if (other.CompareTag("Ball") && isSwinging)
         {
             Rigidbody ballRigidbody = other.GetComponent<Rigidbody>();
 
             if (ballRigidbody != null)
             {
-                
                 float appliedForce = isRegularSwing ? regularHitForce : underhandHitForce;
-                Vector3 hitDirection = racquet.transform.forward.normalized; 
-
-                
+                Vector3 hitDirection = racquet.transform.forward.normalized;
                 ballRigidbody.velocity = hitDirection * appliedForce;
 
                 Debug.Log($"Ball hit with {(isRegularSwing ? "Regular" : "Underhand")} swing! Velocity: {ballRigidbody.velocity}");
             }
         }
     }
-
     
     public void LoseLife()
     {

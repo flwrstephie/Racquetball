@@ -1,25 +1,30 @@
 using UnityEngine;
-using UnityEngine.UI;  
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance { get; private set; }
     public int Score { get; private set; } = 0;
-    public int Lives { get; private set; } = 3; 
+    public int Lives { get; private set; } = 3;
     public TMPro.TextMeshProUGUI scoreText;
-    public Image[] heartImages;  
+    public Image[] heartImages;
+    public GameOverHandler gameOverHandler;  // Reference to the game-over handler.
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        ResetScoreAndLives();
     }
 
     public void AddPoint()
@@ -28,10 +33,12 @@ public class ScoreManager : MonoBehaviour
         UpdateUI();
     }
 
-    public void ResetScore()
+    public void ResetScoreAndLives()
     {
         Score = 0;
+        Lives = 3;
         UpdateUI();
+        UpdateLivesUI();
     }
 
     public void LoseLife()
@@ -39,13 +46,11 @@ public class ScoreManager : MonoBehaviour
         Lives--;
         if (Lives <= 0)
         {
-            PlayerPrefs.SetInt("FinalScore", Score);
-            SceneManager.LoadScene("GameOverScene");
+            gameOverHandler.GameOver(Score);
         }
-        UpdateLivesUI();  
+        UpdateLivesUI();
         UpdateUI();
     }
-
 
     private void UpdateUI()
     {
