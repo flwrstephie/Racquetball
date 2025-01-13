@@ -151,8 +151,6 @@ public class PlayerController : MonoBehaviour
                 float appliedForce = isRegularSwing ? regularHitForce : underhandHitForce;
                 Vector3 hitDirection = racquet.transform.forward.normalized;
                 ballRigidbody.velocity = hitDirection * appliedForce;
-
-                Debug.Log($"Ball hit with {(isRegularSwing ? "Regular" : "Underhand")} swing! Velocity: {ballRigidbody.velocity}");
             }
         }
     }

@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     public int Lives { get; private set; } = 3;
     public TMPro.TextMeshProUGUI scoreText;
     public Image[] heartImages;
-    public GameOverHandler gameOverHandler;  // Reference to the game-over handler.
+    public GameOverHandler gameOverHandler;  
 
     private void Awake()
     {

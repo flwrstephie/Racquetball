@@ -356,7 +356,6 @@
 "Assets/Imports/UnderwaterFantasy/Scripts/Perspective2DSortMode.cs"
 "Assets/Scripts/BallPhysics.cs"
 "Assets/Scripts/CameraFollow.cs"
-"Assets/Scripts/GameOver.cs"
 "Assets/Scripts/GameOverHandler.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PlayerController.cs"
