@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.55f1 (9f374180d209) revision 10434369'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 7886 MB
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32535 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Program Files\Unity Hub\2022.3.55f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.55f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/Github/Racquetball/Racquetball
+C:/Users/kathe/OneDrive/Documents/GitHub/Racquetball/Racquetball
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51569
-Successfully changed project path to: D:/Github/Racquetball/Racquetball
-D:/Github/Racquetball/Racquetball
+53748
+Successfully changed project path to: C:/Users/kathe/OneDrive/Documents/GitHub/Racquetball/Racquetball
+C:/Users/kathe/OneDrive/Documents/GitHub/Racquetball/Racquetball
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,70 +49,1254 @@ D:/Github/Racquetball/Racquetball
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4300]  Target information:
+Player connection [25004]  Target information:
 
-Player connection [4300]  * "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 640807855 [EditorId] 640807855 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-0I9CED2O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [25004]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 1607070678 [EditorId] 1607070678 [Version] 1048832 [Id] WindowsEditor(7,arin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [4300] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [4300] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 363.36 ms, found 3 plugins.
+Player connection [25004] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25004] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Refreshing native plugins compatible for Editor in 5.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.55f1 (9f374180d209)
-[Subsystems] Discovering subsystems at path D:/Program Files/Unity Hub/2022.3.55f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Github/Racquetball/Racquetball/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/kathe/OneDrive/Documents/GitHub/Racquetball/Racquetball/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce MX330 (ID=0x1d16)
+    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
     Vendor:   NVIDIA
-    VRAM:     1968 MB
-    Driver:   32.0.15.6070
+    VRAM:     7957 MB
+    Driver:   32.0.15.6094
 Initialize mono
-Mono path[0] = 'D:/Program Files/Unity Hub/2022.3.55f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Program Files/Unity Hub/2022.3.55f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Program Files/Unity Hub/2022.3.55f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Program Files/Unity Hub/2022.3.55f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.100259 seconds.
-- Loaded All Assemblies, in  2.401 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.55f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004298 seconds.
+- Loaded All Assemblies, in  0.304 seconds
 Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 165 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.318 seconds
-Domain Reload Profiling: 2719ms
-	BeginReloadAssembly (1920ms)
+- Finished resetting the current domain, in  0.380 seconds
+Domain Reload Profiling: 682ms
+	BeginReloadAssembly (110ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (147ms)
-	LoadAllAssembliesAndSetupDomain (288ms)
-		LoadAssemblies (1919ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (120ms)
+		LoadAssemblies (110ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (286ms)
-			TypeCache.Refresh (285ms)
-				TypeCache.ScanAssembly (260ms)
+		AnalyzeDomain (117ms)
+			TypeCache.Refresh (116ms)
+				TypeCache.ScanAssembly (105ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (318ms)
+	FinalizeReload (380ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (257ms)
+		SetupLoadedEditorAssemblies (351ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (222ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (159ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
+			ProcessInitializeOnLoadAttributes (90ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.444 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.394 seconds
+Domain Reload Profiling: 837ms
+	BeginReloadAssembly (106ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (282ms)
+		LoadAssemblies (223ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (105ms)
+				TypeCache.ScanAssembly (93ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (394ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (304ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3127 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (55.0 KB). Loaded Objects now: 3602.
+Memory consumption went from 124.9 MB to 124.8 MB.
+Total: 2.028300 ms (FindLiveObjects: 0.154600 ms CreateObjectMapping: 0.070400 ms MarkObjects: 1.741800 ms  DeleteObjects: 0.060900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 81778.033955 seconds.
+  path: Assets/Materials/Leafplants_BaseColor.mat
+  artifactKey: Guid(6165334cf0ebe7e439178385f5b75e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Leafplants_BaseColor.mat using Guid(6165334cf0ebe7e439178385f5b75e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a2004081db0386ca2113b58aa9b84f58') in 0.110028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.913848 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_1_2.prefab
+  artifactKey: Guid(18127f30efda35d4fbfe343440d1725f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_1_2.prefab using Guid(18127f30efda35d4fbfe343440d1725f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9dd2f06d5807554fe5ddb70a8d62493e') in 0.163847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_1_4.prefab
+  artifactKey: Guid(eab590567d6215549aa164cfbec9adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_1_4.prefab using Guid(eab590567d6215549aa164cfbec9adfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '261b16772659b1fb36333fa1fc90c2b8') in 0.078330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_5.prefab
+  artifactKey: Guid(f530662b6a3721c4c8294824b94b6304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_5.prefab using Guid(f530662b6a3721c4c8294824b94b6304) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9731cf695fd463a6774868a7f430ee40') in 0.117231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_3_3.prefab
+  artifactKey: Guid(c9250b6a9581ab146850127ee38c6631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_3_3.prefab using Guid(c9250b6a9581ab146850127ee38c6631) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cfe510669829952704c423f92841d145') in 0.077562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_1_5.prefab
+  artifactKey: Guid(f8147a1a777b5d440bce2f1043687381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_1_5.prefab using Guid(f8147a1a777b5d440bce2f1043687381) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b9f97cf4db74bfd10ec01a7bf984804b') in 0.019399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_3.prefab
+  artifactKey: Guid(a66d056a0e0553246815bfb823bf89e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_3.prefab using Guid(a66d056a0e0553246815bfb823bf89e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '403fe389bf46871057819545f9ed2cbf') in 0.112684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_3_2.prefab
+  artifactKey: Guid(151685bda12269d4ba87df53f7993226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_3_2.prefab using Guid(151685bda12269d4ba87df53f7993226) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7bc637eead32ad6e2c55946a347506f9') in 0.049750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_2.prefab
+  artifactKey: Guid(375e0af2d659a964e9d194e714c81c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_2.prefab using Guid(375e0af2d659a964e9d194e714c81c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '35d8d97b41ecea2c8fa66027f85f837f') in 0.058754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_4.prefab
+  artifactKey: Guid(a25b3723a425af04985bf9cb2f0d3334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Prefab/RollingBalls_Sci-fi_4_4.prefab using Guid(a25b3723a425af04985bf9cb2f0d3334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '96691d33bf35f6510b92ade1a0372c8f') in 0.166692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.329 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.661 seconds
+Domain Reload Profiling: 989ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (160ms)
+		LoadAssemblies (206ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (662ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (330ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (240ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3104 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3646.
+Memory consumption went from 125.0 MB to 125.0 MB.
+Total: 1.946900 ms (FindLiveObjects: 0.158100 ms CreateObjectMapping: 0.068700 ms MarkObjects: 1.694000 ms  DeleteObjects: 0.025500 ms)
+
+Prepare: number of updated asset objects reloaded= 9
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.296 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.592 seconds
+Domain Reload Profiling: 887ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (131ms)
+		LoadAssemblies (189ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (593ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (324ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (243ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3649.
+Memory consumption went from 125.3 MB to 125.2 MB.
+Total: 2.323600 ms (FindLiveObjects: 0.241400 ms CreateObjectMapping: 0.101900 ms MarkObjects: 1.947200 ms  DeleteObjects: 0.032300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.298 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.615 seconds
+Domain Reload Profiling: 912ms
+	BeginReloadAssembly (111ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (616ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (330ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (250ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 2.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3652.
+Memory consumption went from 125.3 MB to 125.2 MB.
+Total: 2.571100 ms (FindLiveObjects: 0.208700 ms CreateObjectMapping: 0.105700 ms MarkObjects: 2.205800 ms  DeleteObjects: 0.049800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.306 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.611 seconds
+Domain Reload Profiling: 917ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (612ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (320ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (240ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3655.
+Memory consumption went from 125.3 MB to 125.2 MB.
+Total: 2.740700 ms (FindLiveObjects: 0.222100 ms CreateObjectMapping: 0.130100 ms MarkObjects: 2.323600 ms  DeleteObjects: 0.063800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.303 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.597 seconds
+Domain Reload Profiling: 899ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (139ms)
+		LoadAssemblies (191ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (597ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (316ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (236ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 3.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3658.
+Memory consumption went from 125.3 MB to 125.2 MB.
+Total: 2.856600 ms (FindLiveObjects: 0.236700 ms CreateObjectMapping: 0.182900 ms MarkObjects: 2.398700 ms  DeleteObjects: 0.037300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.310 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.634 seconds
+Domain Reload Profiling: 943ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (192ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (635ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (332ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (251ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 3.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3661.
+Memory consumption went from 125.3 MB to 125.3 MB.
+Total: 2.478900 ms (FindLiveObjects: 0.219800 ms CreateObjectMapping: 0.100600 ms MarkObjects: 2.124400 ms  DeleteObjects: 0.033300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.304 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.615 seconds
+Domain Reload Profiling: 918ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (191ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (616ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (318ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (238ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3664.
+Memory consumption went from 125.3 MB to 125.3 MB.
+Total: 2.477500 ms (FindLiveObjects: 0.194700 ms CreateObjectMapping: 0.081400 ms MarkObjects: 2.163400 ms  DeleteObjects: 0.037200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.301 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.616 seconds
+Domain Reload Profiling: 916ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (132ms)
+		LoadAssemblies (182ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (617ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (319ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (238ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3667.
+Memory consumption went from 125.3 MB to 125.3 MB.
+Total: 2.514500 ms (FindLiveObjects: 0.215200 ms CreateObjectMapping: 0.130500 ms MarkObjects: 2.108700 ms  DeleteObjects: 0.059300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
+========================================================================
+Received Import Request.
+  Time since last request: 421.754874 seconds.
+  path: Assets/Fonts/Jersey25Charted-Regular.ttf
+  artifactKey: Guid(937e255f71224a4469d6e74b1a4bc46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Jersey25Charted-Regular.ttf using Guid(937e255f71224a4469d6e74b1a4bc46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'eb64d45cc04b9f5508594fd078fa6d90') in 0.079879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 1.591653 seconds.
+  path: Assets/Fonts/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c181e2305fd90a897f79e6ba3a79917b') in 0.075253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Fonts/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '14f2f5980295b59c4aaec8aca002f0d1') in 0.037181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.375938 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_36.mat
+  artifactKey: Guid(481021077d0f73f45907e7908f0398e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_36.mat using Guid(481021077d0f73f45907e7908f0398e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3f6ed58fd529daba8841926eed0c8442') in 0.025821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.251280 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_39.mat
+  artifactKey: Guid(ea651e7d3c9965b4291994ecca57f039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_39.mat using Guid(ea651e7d3c9965b4291994ecca57f039) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1cbc9c73c41f75d3e5bf7e7295476425') in 0.015530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_225.mat
+  artifactKey: Guid(784013f4b65134b4dacd4665a0bf7201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_225.mat using Guid(784013f4b65134b4dacd4665a0bf7201) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'de1bcab01e599c7e92290984ec591260') in 0.018513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_226.mat
+  artifactKey: Guid(74c6a3de878e23a4da9a4e7291604f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_226.mat using Guid(74c6a3de878e23a4da9a4e7291604f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3ed66f1670b5b9ddb9b389aafd5fd264') in 0.015387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003014 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_228.mat
+  artifactKey: Guid(5a4f90bd017dde540a73bf6040d3baa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_228.mat using Guid(5a4f90bd017dde540a73bf6040d3baa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1f04699bc23854d9e6b54f933aecfa17') in 0.017982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_229.mat
+  artifactKey: Guid(1d341fd552b63f34290c308ffdd4360f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_229.mat using Guid(1d341fd552b63f34290c308ffdd4360f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8f4465558dfa5eac4e7b56c82b502245') in 0.015524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_231.mat
+  artifactKey: Guid(f68f520bbb970b2429583b9536c81461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_231.mat using Guid(f68f520bbb970b2429583b9536c81461) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9728a9fd54ad844280246ed26e8b6e38') in 0.018978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.281831 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_234.mat
+  artifactKey: Guid(a5e9984ed498fb4468d7c587f5c188d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_234.mat using Guid(a5e9984ed498fb4468d7c587f5c188d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '399017afd716183a1b6006d8929a191a') in 0.029762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_235.mat
+  artifactKey: Guid(284926ca839ef6a48a8f44fb76007f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_235.mat using Guid(284926ca839ef6a48a8f44fb76007f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '43539a3a7708bf60d779b4f893dc05cc') in 0.016405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_237.mat
+  artifactKey: Guid(df3c568df3cf2244eab2fcc1794c55c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_237.mat using Guid(df3c568df3cf2244eab2fcc1794c55c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7bce37e361635bd5f5cfcb5764b83877') in 0.022764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001402 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_239.mat
+  artifactKey: Guid(9a55ba01ccc3e9845adcf1164de1b218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_239.mat using Guid(9a55ba01ccc3e9845adcf1164de1b218) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c5df8a6824780b58fdc50b0f75f6c735') in 0.020377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_250.mat
+  artifactKey: Guid(1c8f96cd1ffc6d7448f64ae218feeb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_250.mat using Guid(1c8f96cd1ffc6d7448f64ae218feeb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ee1144e7904409c829b8730e1110f3b7') in 0.020513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_254.mat
+  artifactKey: Guid(6f1180375e351414ab2ae7838fdfb127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_254.mat using Guid(6f1180375e351414ab2ae7838fdfb127) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f74f823b51064cdc38f6b0904685082e') in 0.015605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_258.mat
+  artifactKey: Guid(61c02a50a03425c4a80e1c2fee4a6b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_258.mat using Guid(61c02a50a03425c4a80e1c2fee4a6b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4ad93bb2928d8821e9c063dc5bc8dd92') in 0.018920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_263.mat
+  artifactKey: Guid(42c8ba631da84a94e9194697a1a66779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_263.mat using Guid(42c8ba631da84a94e9194697a1a66779) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a25fc720d64550f9fd8fc740c7e25976') in 0.015472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_243.mat
+  artifactKey: Guid(c860229b1dcdc774ead34f4ffcbe9d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_243.mat using Guid(c860229b1dcdc774ead34f4ffcbe9d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8435b85db1eac02a81ec669ad5c8e82d') in 0.016278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_259.mat
+  artifactKey: Guid(227490cdc6ee28c4b90a689c277f8fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_259.mat using Guid(227490cdc6ee28c4b90a689c277f8fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e2c72718839781b510b670870641bbdc') in 0.020574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_255.mat
+  artifactKey: Guid(8928443014b001e499a932137e78e291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_255.mat using Guid(8928443014b001e499a932137e78e291) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f9b94159ab18aeb444a9cc1ec1f4a825') in 0.018341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_252.mat
+  artifactKey: Guid(dc41556bb77b8f3459d9718c311ddf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_252.mat using Guid(dc41556bb77b8f3459d9718c311ddf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3cb8bc2debc34e0b6e9733afd65b29d5') in 0.016506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.865689 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_269.mat
+  artifactKey: Guid(ca78d79d1a42d5e4d8fe5d4b633c972a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_269.mat using Guid(ca78d79d1a42d5e4d8fe5d4b633c972a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '93ee4b1dd443bd6cd894697112311c40') in 0.017364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.034137 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_272.mat
+  artifactKey: Guid(56bf593f189b5a94eb403a6359058443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_272.mat using Guid(56bf593f189b5a94eb403a6359058443) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1a2c61055e733d48aaf4537e3b511c11') in 0.028000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.040898 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_382.mat
+  artifactKey: Guid(05f141b79b48daf4bbb6274bd5f41bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_382.mat using Guid(05f141b79b48daf4bbb6274bd5f41bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd1c71e6af7fb012c1c1fa70ecec4b342') in 0.017806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.049752 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_386.mat
+  artifactKey: Guid(9a633e983544c57419f0a285ee1e24af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_386.mat using Guid(9a633e983544c57419f0a285ee1e24af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f80405828923b0d268fbbd1da5a11049') in 0.020068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.691153 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_389.mat
+  artifactKey: Guid(553d986c7d6f7ec408ea9d04ee8aeedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_389.mat using Guid(553d986c7d6f7ec408ea9d04ee8aeedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7f91bd8222a410510a8d278eddc9a92b') in 0.017280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_390.mat
+  artifactKey: Guid(00e2accff76820c488ea922ec9b8a4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_390.mat using Guid(00e2accff76820c488ea922ec9b8a4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a14d7b5867c2de917de37194ffff4107') in 0.014116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007354 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_483.mat
+  artifactKey: Guid(2d4223d103fcd3f42a9bc7842888d0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_483.mat using Guid(2d4223d103fcd3f42a9bc7842888d0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a5dd0bf699903784e87dc4288a258df0') in 0.014704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_495.mat
+  artifactKey: Guid(904c7a3763da4c644897d1ddb6d44a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_495.mat using Guid(904c7a3763da4c644897d1ddb6d44a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ff605fbb4520257113484b01f1be3a9a') in 0.016237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_510.mat
+  artifactKey: Guid(45c2429ed07fce541b6f217a2013534b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_510.mat using Guid(45c2429ed07fce541b6f217a2013534b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f250495c84b8e0eccdec78146b609193') in 0.028156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_586.mat
+  artifactKey: Guid(725f31cde2d225f41a1cc149853d703d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_586.mat using Guid(725f31cde2d225f41a1cc149853d703d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6dc1a419c1c40c7f60aa1d989a4da9a6') in 0.016074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_584.mat
+  artifactKey: Guid(a30a6e18a78220540b8e9539af53bd70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_584.mat using Guid(a30a6e18a78220540b8e9539af53bd70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '18925eb40904e3b0f161f7032c4b8012') in 0.014818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.264429 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_588.mat
+  artifactKey: Guid(276d3b36e7368b14197bd1f9980bfb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_588.mat using Guid(276d3b36e7368b14197bd1f9980bfb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '874b334e011067aa52cc41a421c4e7ba') in 0.018987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_590.mat
+  artifactKey: Guid(c003205dd8e10ac48b5a00ca28544915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_590.mat using Guid(c003205dd8e10ac48b5a00ca28544915) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd05139e1089d275a99d3637c94720899') in 0.018047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_591.mat
+  artifactKey: Guid(3643c71593c393d46a150d9925d65779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_591.mat using Guid(3643c71593c393d46a150d9925d65779) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '24b523cdeaf0e10305dd3b70111658ec') in 0.016442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003872 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_594.mat
+  artifactKey: Guid(722428b06618a2042a982365175f9eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_594.mat using Guid(722428b06618a2042a982365175f9eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5529fbe3ef21f26d41f1c48ed060b0be') in 0.016639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_595.mat
+  artifactKey: Guid(d1c4a17745f5f1340b6b2a20a991ac96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_595.mat using Guid(d1c4a17745f5f1340b6b2a20a991ac96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4beb063d7c6e13d56f9d7c1f076d5b8e') in 0.016467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_598.mat
+  artifactKey: Guid(2d7166682d1cb4045a45ccac6c1ebce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_598.mat using Guid(2d7166682d1cb4045a45ccac6c1ebce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b57c5ea66c76608e9426a394bd36e338') in 0.017940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.642504 seconds.
+  path: Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_2430.mat
+  artifactKey: Guid(d5d4a67f6fd50df468c44f5a85c5e6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Rolling_Balls-Sci-fi_Pack/Rolling_Balls-Sci-fi_Pack_SRP_Build/Material/Rolling_Balls-Sci-fi_2430.mat using Guid(d5d4a67f6fd50df468c44f5a85c5e6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '45023aa8824ebd9ea7c38ad715caeeae') in 0.016532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.307 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.614 seconds
+Domain Reload Profiling: 920ms
+	BeginReloadAssembly (119ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (139ms)
+		LoadAssemblies (191ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (614ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (328ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (248ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3104 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3675.
+Memory consumption went from 125.2 MB to 125.2 MB.
+Total: 2.274700 ms (FindLiveObjects: 0.187900 ms CreateObjectMapping: 0.071300 ms MarkObjects: 1.979700 ms  DeleteObjects: 0.034400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Done_BGScroller.cs: 1b3198ba615c822a59fd79b2adcf432b -> ae5c6274eca284ce745e6d8896bcbb50
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Perspective2DSortMode.cs: 1d9a94a6cf8c88ceed039dc05d9c7649 -> 0b8e318849783017fdb32f7eacc79f2c
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f6c84542c493fe0f1d27adc8ecb95978 -> 2664f25741db8902903ab629020d901e
